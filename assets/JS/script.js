@@ -1,8 +1,11 @@
-var cusr = document.querySelector("#cursor")
-document.addEventListener("mousemove",function(dets){
-    crsr.style.left = dets.x+"px"
-    crsr.style.top = dets.y+"px"
-})
+var crsr = document.querySelector("#cursor");
+var blur = document.querySelector("#cursor-blur")
+document.addEventListener("mousemove", function(event) {
+    crsr.style.left = event.clientX + "px";
+    crsr.style.top = event.clientY + "px";
+    blur.style.left = event.clientX - 250 + "px";
+    blur.style.top = event.clientY - 250 + "px";
+});
 
 
 gsap.to("#nav",{
