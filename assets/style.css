@@ -151,3 +151,50 @@ video{
         transform: translate(-100%);
     }
 }
+#about-me{
+    height:40vh;
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px;
+    position: relative;
+    z-index: 10;
+}
+#about-me img{
+    height: 270px;
+    width: auto;
+    border-radius: 20px;
+    object-fit: cover;
+}
+#about-me-in{
+    width: 50%;
+    text-align: center;
+}
+#about-me-in h3{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+#about-me-in p{
+    font-size: 20px;
+    line-height: 26px;    
+}
+#cards-container{
+    background-color: red;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    background-size: cover;
+    background-position: center;
+
+}
+.card{
+    width: 24%;
+    height: 80%;
+    background-color: blue;
+    border-radius: 30px;
+}
